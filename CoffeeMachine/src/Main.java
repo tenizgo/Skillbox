@@ -8,12 +8,14 @@ public class Main {
 
         int cappucinoMilkRequired = 60;
         int cappucionoCoffeeRequired = 15;
- // капучино кофе реком считать за пися
+
+        // капучино кофе реком считать за пися
         boolean milkIsEnough = skimedMilkAmount >= cappucinoMilkRequired ||
                 milkAmount >= cappucinoMilkRequired;
 
         boolean coffeeIsEnough = coffeeAmount >= cappucionoCoffeeRequired;
 
+        //Вывод данных на консоль
         if (isBlocked) {
             System.out.println("Кофе машина заблокирована");
         } else {
